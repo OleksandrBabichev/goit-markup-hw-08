@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
  
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -22,12 +23,30 @@
             <!-- Навігація -->
 
             <nav class="site-nav">
-                <ul class="site-nav__list list">
-                    <li class="site-nav__item"><a href="./index.html" class=" site-nav__link site-nav__link--curent link">Студія</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class=" site-nav__link link">Портфоліо</a></li>
-                    <li class="site-nav__item"><a href="./test.html" class=" site-nav__link link">Контакти</a></li>
-                </ul>
-            </nav>
+                <button type="button" class="site-nav__menu-button is-open" 
+                    aria-expanded="false"
+                    aria-controls="site-nav__menu" 
+                    data-menu>
+
+                    <svg height="40" width="40" aria-label="Перемикач мобільного меню">
+                        <use class="site-nav__icon--cross" href="./images/sprite.svg#instagram" data-menu-close></use>
+                        <use class="site-nav__icon--menu" href="./images/sprite.svg#linkedin" data-menu-open></use>
+                    </svg>
+
+                </button>
+                <button type="button"></button>
+                <div class="site-nav__menu" id="site-nav__menu" data-menu>
+                    <ul class="site-nav__list list">
+                    <li class="site-nav__item">
+                        <a href="./index.html" class=" site-nav__link site-nav__link--curent link">Студія</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class=" site-nav__link link">Портфоліо</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./test.html" class=" site-nav__link link">Контакти</a>
+                    </li>
+                </ul> -->
             <!-- Контакти шапки -->
                 <ul class="list head-contacts">
                     <li class="head-contacts__item">
@@ -47,6 +66,9 @@
                         </a>
                     </li>
                 </ul>
+                </div>
+            </nav>
+
         </div>
     </header>   
   
@@ -476,5 +498,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
