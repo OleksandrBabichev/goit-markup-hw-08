@@ -1,0 +1,90 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    margin-left: 93px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link {
+        color: $title-text-color;
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $hover-tet-color;
+    }
+
+    &__link--curent {
+        position: relative;
+        color: $hover-tet-color;
+        padding: 32px 0;
+    }
+
+    &__link--curent::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: $hover-tet-color;
+    }
+}
+
+.head-contacts {
+    display: flex;
+    margin-left: auto;
+
+    &__item:not(:first-child) {
+    margin-left: 50px;
+    }
+
+    &__link {
+    display: flex;
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $hover-tet-color;
+        fill: $hover-tet-color;
+    }
+
+    &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+    }
+}

@@ -1,0 +1,28 @@
+.technology {
+    padding-top: 0;
+
+    &__description {
+        display: flex;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        width: 370px;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        bottom: 0;
+
+        color: $primary-bcg-color;
+        background-color: rgba(47, 48, 58, .8);
+    }
+}
+
+.technology__item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}

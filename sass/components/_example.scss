@@ -1,0 +1,88 @@
+.example {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.example__link {
+    display: block;
+    text-decoration: none;
+    transition-property: box-shadow;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 10%),
+            5px 5px 5px rgb(0 0 0 / 8%),
+            5px 5px 5px rgb(0 0 0 / 12%);
+    }
+
+    &:hover .example__text,
+    &:focus .example__text {
+        transform: translateY(-294px);
+    }
+}
+
+// .example__link:hover,
+// .example__link:focus {
+//     box-shadow: 5px 5px 5px rgb(0 0 0 / 10%),
+//         5px 5px 5px rgb(0 0 0 / 8%),
+//         5px 5px 5px rgb(0 0 0 / 12%);
+// }
+
+.example__image {
+    position: relative;
+    overflow: hidden;
+}
+
+.example__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    color: $primary-bcg-color;
+    background-color: $hover-tet-color;
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// .example__link:hover .example__text,
+// .example__link:focus .example__text {
+//     transform: translateY(-294px);
+// }
+
+.example__frame {
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.example__title {
+    color: $title-text-color;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 4px;
+}
+
+.example__category {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}
