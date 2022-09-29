@@ -16,11 +16,13 @@
     .team__item {
         margin-left: auto;
         margin-right: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
+
 }
 
 @media screen and (min-width: 768px) {

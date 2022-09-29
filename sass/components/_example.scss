@@ -1,8 +1,18 @@
-.example {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+@media screen and (min-width: 767px) {
+    .example {
+        display: flex;
+        flex-basis: calc((100% - 30px)/2);
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
+
+@media screen and (max-width: 767px) {
+.example__item:not(:last-child) {
+    margin-bottom: 30px;
+    }
+}
+
 
 .example__link {
     display: block;
@@ -26,12 +36,12 @@
     }
 }
 
-// .example__link:hover,
-// .example__link:focus {
-//     box-shadow: 5px 5px 5px rgb(0 0 0 / 10%),
-//         5px 5px 5px rgb(0 0 0 / 8%),
-//         5px 5px 5px rgb(0 0 0 / 12%);
-// }
+.example__link:hover,
+.example__link:focus {
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 10%),
+        5px 5px 5px rgb(0 0 0 / 8%),
+        5px 5px 5px rgb(0 0 0 / 12%);
+}
 
 .example__image {
     position: relative;
@@ -56,10 +66,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .example__link:hover .example__text,
-// .example__link:focus .example__text {
-//     transform: translateY(-294px);
-// }
+.example__link:hover .example__text,
+.example__link:focus .example__text {
+    transform: translateY(-294px);
+}
 
 .example__frame {
     border-bottom: 1px solid #EEEEEE;
