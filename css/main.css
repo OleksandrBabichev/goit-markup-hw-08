@@ -1071,21 +1071,39 @@ img {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.08), 5px 5px 5px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .example {
     display: flex;
-    flex-basis: calc((100% - 30px) / 2);
     flex-wrap: wrap;
     gap: 30px;
   }
-}
-@media screen and (max-width: 767px) {
-  .example__item:not(:last-child) {
-    margin-bottom: 30px;
+  .portfolio-page {
+    flex-grow: 1;
+  }
+  .example__item {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .example {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .portfolio-page {
+    flex-grow: 1;
+  }
+  .example__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+.example__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .example__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   transition-property: box-shadow;
   transition-property: box-shadow;
@@ -1116,7 +1134,7 @@ img {
   letter-spacing: 0.03em;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 120%;
   padding: 63px 24px;
   color: #FFFFFF;
   background-color: #2196F3;
