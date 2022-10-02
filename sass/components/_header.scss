@@ -16,8 +16,8 @@
 }
 
 .site-nav-mobile__menu-button {
-    position: absolute;
-    right: 0;
+    position: relative;
+    right: 10%;
     z-index: 10;
 
     width: 50px;
@@ -72,9 +72,6 @@
     flex-direction: column;
 }
 
-// body.site-nav-mobile.is-open {
-//     overflow: hidden;
-// }
 
 .site-nav-mobile__list {
     display: flex;
