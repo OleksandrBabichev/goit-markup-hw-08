@@ -319,7 +319,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 21px 15px;
+    padding: 21px 0;
   }
   .site-nav-wide {
     display: flex;
@@ -333,6 +333,9 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .header {
+    padding: 21px 0;
+  }
   .head-contacts {
     display: flex;
   }
