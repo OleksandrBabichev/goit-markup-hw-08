@@ -51,6 +51,11 @@ img {
     max-width: 480px;
   }
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 480px) {
   .container {
     max-width: 480px;
@@ -89,8 +94,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 .button {
