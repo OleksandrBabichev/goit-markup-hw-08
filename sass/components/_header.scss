@@ -209,7 +209,17 @@
 
 .site-nav__list {
     display: flex;
-    margin-right: 315px;
+}
+
+@media screen and (min-width: 768px) {
+    .site-nav__list {
+        margin-right: 90px;
+    }}
+
+@media screen and (min-width: 1200px) {
+    .site-nav__list {
+        margin-right: 315px;
+}
 }
 
 .site-nav__item:not(:last-child) {
