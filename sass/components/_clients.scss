@@ -2,6 +2,30 @@
     .clients__list {
     flex-basis: calc((100% - 30px)/2);
     }
+
+    .clients__link {
+        width: 210px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .clients__list {
+        gap: 15px;
+    }
+
+    .clients__link {
+        width: 226px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    // .clients__list {
+    //     gap: 15px;
+    // }
+
+    .clients__link {
+        width: 170px;
+    }
 }
 
 .clients__list {
@@ -17,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    // width: 170px;
     height: 92px;
     border: 1px solid $primary-link-color;
     border-radius: 4px;

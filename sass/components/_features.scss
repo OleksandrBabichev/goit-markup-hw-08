@@ -10,7 +10,7 @@
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
 .feature__item:not(:last-child) {
     margin-bottom: 30px;
 }}
@@ -53,6 +53,12 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+        justify-content: center;
+        
+        // &:nth-child(2n + 1) {
+        //     margin-bottom: 30px;
+        //     margin-right: 30px;
+        // }
     }
 }
 

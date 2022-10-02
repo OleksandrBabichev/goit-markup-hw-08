@@ -50,12 +50,13 @@ img {
     .section {
     padding-bottom: 94px;
     padding-top: 94px;
-    margin-left: 15px;
-    margin-right: 15px;
     }
 }
-.section {
-    padding: 60px 0;
+
+@media screen and (max-width: 765px) {
+    .section {
+        padding: 60px 0;
+    }
 }
 
 .section__title {
